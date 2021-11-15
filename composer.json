@@ -1,0 +1,28 @@
+{
+  "name" : "lauraferronatomezacasa/apiseries",
+  "description" : "Conectando nas API's do TheMovieDatabase",
+  "minimum-stability" : "stable",
+  "license" : "MIT",
+  "authors" : [{
+    "name" : "Laura F. Mezacasa",
+    "email" : "laurafmezacasa@gmail.com",
+    "role" : "Developer"
+  }
+  ],
+  "config" : {
+    "vendor-dir" : "vendor"
+  },
+  "autoload" : {
+    "psr-4" : {
+      "Source\\" : "Source/"
+    },
+    "files" : [
+      "Source/Config.php"
+    ]
+  },
+  "require": {
+    "coffeecode/datalayer": "1.1.*",
+    "vfalies/tmdb": "1.8.*",
+    "twbs/bootstrap": "5.*"
+  }
+}
