@@ -16,7 +16,7 @@
     $today = date('Y-m-d');
 
     // Valida se já tem dados cadastrados no banco.
-    if ($validar == 100) {
+    if ($validar) {
         $series = $contador->find()->fetch(true);
 
         foreach ($series as $serie) {
