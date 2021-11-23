@@ -10,7 +10,7 @@
     $validar = $serie->find()->count();
     $quantidadeEps = $episodiosInfos->find()->count();
 
-if ($validar) { // Verifica se tem registros no banco, se não tiver ele printa na tela que não há registros.
+if ($validar == 100) { // Verifica se tem registros no banco, se não tiver ele printa na tela que não há registros.
         $series = $serie->find()->fetch(true);
         $episodios = $episodiosInfos->find()->fetch(true);
         $resenhas = $resenha->find()->fetch(true);
