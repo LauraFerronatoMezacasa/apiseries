@@ -30,7 +30,7 @@
         if ($dataCriacao == $today){
             echo "<h4>Banco atualizado!</h4>";
         } else { // Caso não esteja atualizado, ele exclui os dados e cadastra tudo novamente.
-            for($i = $idReferencia-99;$i <= $idReferencia; $i++) {
+            for($i = $idReferencia-($validar-1);$i <= $idReferencia; $i++) {
                 $registro = $contador->findById($i);
                 $registro->destroy();
             }
